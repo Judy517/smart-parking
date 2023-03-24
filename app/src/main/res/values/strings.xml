@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SmartParking</string>
+    <string name="empty_field">-</string>
+    <string name="refresh">refresh</string>
+    <string name="warnings">Warnings</string>
+    <string name="time_remaining">Time Remaining</string>
+    <string name="total_parking_time">Total Parking Time</string>
+    <string name="start_time">Start Time</string>
+    <string name="current_spot">Current Spot</string>
+    <string name="current_spot_type">Current Spot Type</string>
+    <string name="customer_type">Customer Type</string>
+    <string name="plate_no">Plate No.</string>
+    <string name="my_car">My Car</string>
+    <string name="parking_structure_x">Parking Structure X</string>
+    <string name="parking_spots_remaining">Parking Spots Remaining</string>
+    <string name="available_spots">Available Spots</string>
+</resources>
