@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="@string/parking_spots_remaining" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".6"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textSize="16sp"
+                android:text="@string/parking_structure_x" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:gravity="end"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textSize="16sp"
+                android:id="@+id/availability"
+                android:text="@string/empty_field"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".6"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textSize="16sp"
+                android:text="@string/available_spots" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:gravity="end"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textSize="16sp"
+                android:id="@+id/available_spots"
+                android:text="@string/empty_field"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="@string/my_car" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:text="@string/plate_no" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:gravity="end"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:importantForAutofill="no"
+                    android:id="@+id/plate"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:text="@string/customer_type" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:gravity="end"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:id="@+id/customer_type"
+                    android:text="@string/empty_field" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:text="@string/current_spot_type" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:gravity="end"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:id="@+id/current_spot_type"
+                    android:text="@string/empty_field" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:text="@string/current_spot" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:gravity="end"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:id="@+id/current_spot"
+                    android:text="@string/empty_field" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:text="@string/start_time" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:gravity="end"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:id="@+id/start_time"
+                    android:text="@string/empty_field" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:text="@string/total_parking_time" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:gravity="end"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:id="@+id/total_parking_time"
+                    android:text="@string/empty_field" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:text="@string/time_remaining" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:gravity="end"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:id="@+id/time_remaining"
+                    android:text="@string/empty_field" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="@string/warnings" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/design_default_color_error"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal"
+        android:id="@+id/warnings"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:src="@drawable/ic_sync"
+        app:tint="@android:color/tab_indicator_text"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="onClickRefresh"
+        android:contentDescription="@string/refresh" />
+
+</LinearLayout>
